@@ -17,7 +17,7 @@ $(function(){
       resolution: 1
     });
     map.addLayer(gridLayer);
-    this.gridLayer.bringToFront();
+    gridLayer.bringToFront();
 
     gridLayer.on('click', function (e) {
       var layer = new L.GeoJSON(e.data.geometry);
